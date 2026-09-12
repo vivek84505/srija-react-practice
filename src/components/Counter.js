@@ -5,6 +5,7 @@ import UserProfile from "./UserProfile";
 function Counter(){
 
     const [count,setCount] = useState(0)
+    
     const name = "Vijay"
     const [message,setMessage] = useState("Hello")
     
@@ -29,7 +30,7 @@ function Counter(){
             <h3>Name - {name}</h3>
             <h3>Message - {message}</h3>
             <input name="message" value={message} onChange={handleChange} />
-        
+
             <UserProfile name="Vivek"/>
             <UserProfile name="Srija"/>
             <UserProfile name="Kaushik"/>
