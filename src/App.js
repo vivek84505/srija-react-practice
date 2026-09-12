@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Content from './components/Content';
 import Sidebar from './components/Sidebar';
 import Counter from './components/Counter';
+import Users from './components/Users';
 
 function App() {
 
@@ -19,8 +20,8 @@ function App() {
         <Content/>
         <Sidebar/> */}
 
-        <Counter/>
-
+        {/* <Counter/> */}
+        <Users/>
 
     </div>
   );

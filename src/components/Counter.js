@@ -1,12 +1,13 @@
 import { useState } from "react";
 import CounterShow from "./CounterShow";
 import UserProfile from "./UserProfile";
+import CounterAction from "./CounterAction";
 
 function Counter(){
 
     const [count,setCount] = useState(0)
     
-    const name = "Vijay"
+    
     const [message,setMessage] = useState("Hello")
     
     const handleChange = (event) => {
@@ -27,19 +28,15 @@ function Counter(){
     return(
         
         <div>
-            <h3>Name - {name}</h3>
+            
             <h3>Message - {message}</h3>
             <input name="message" value={message} onChange={handleChange} />
-
-            <UserProfile name="Vivek"/>
-            <UserProfile name="Srija"/>
-            <UserProfile name="Kaushik"/>
+ 
 
 
-            <CounterShow name='Vivek' counter={count}  />
+            <CounterShow name='Vivek' counter={count} test='testing'   />
+            <CounterAction incermentCounter ={increment} decrementCounter={decrement} />
 
-             <button onClick={increment}>Increment</button>
-             <button onClick={decrement}> Increment</button>
               <button onClick={() => alert('test')}> Alert</button>
              {
                 (count % 2 === 0)?(<h2>Even</h2>):(<h2>ODD</h2>)
