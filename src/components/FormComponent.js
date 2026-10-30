@@ -7,7 +7,7 @@ function FormComponent() {
     const [errors1,setError1] = useState('state variable')
      
     const [formData , setFormData] = useState({
-        firstname : "",
+        firstname : "vivek",
         lastname : "",
         email:""
     })
@@ -20,10 +20,13 @@ function FormComponent() {
     },[errors1])
 
 
-    const changeNonStateData = () =>{
-        // alert(errors1)
-        setError1('state variable updated')
-        // alert(errors1)
+    const resetForm = () =>{
+        
+       setFormData({
+        firstname : "vivek",
+        lastname : "",
+        email:""
+    })
        
     }
 
@@ -134,7 +137,7 @@ function FormComponent() {
                     <h2>Email = {formData.email} </h2>
             </div>
 
-             <button onClick={changeNonStateData}>Non State Data</button>
+             <button onClick={resetForm}>Reset</button>
         </div>
 
        
