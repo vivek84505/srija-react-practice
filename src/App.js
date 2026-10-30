@@ -7,6 +7,8 @@ import Content from './components/Content';
 import Sidebar from './components/Sidebar';
 import Counter from './components/Counter';
 import Users from './components/Users';
+import FormComponent from './components/FormComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -21,7 +23,8 @@ function App() {
         <Sidebar/> */}
 
         {/* <Counter/> */}
-        <Users/>
+        {/* <Users/> */}
+        <FormComponent/>
 
     </div>
   );
