@@ -1,0 +1,27 @@
+1) Assignment on  Controlled component
+
+a) create a form with below fields
+firstname,lastname,mobile,email,designation,city,company
+b) add form validation and display form errors
+c) Clear form - Reset
+
+
+
+2) Assignment on Event Handling
+
+Create a Employee Add Form
+
+firstname,lastname,mobile,email,designation,city(dropdown),company,gender(radio),hobbies(checkbox)
+
+divide UI in 2 parts
+1 part will display form 
+2nd part will display user details that is being filled in the form
+Reset button
+Add all the form validation + Display error messages
+on clearing all the validations Onsubmit Display the form is submitted UI - Form submitted successfully!
+
+
+3) List Assignment
+fetch sample data from this URL - https://jsonplaceholder.typicode.com/
+
+Display list with Unique keys
