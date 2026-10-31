@@ -1,6 +1,0 @@
-1) Controlled component
-
-a) create a form with below fields
-firstname,lastname,mobile,email,designation,city,company
-b) add form validation and display form errors
-c) Clear form - Reset

@@ -9,6 +9,8 @@ import Counter from './components/Counter';
 import Users from './components/Users';
 import FormComponent from './components/FormComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import EventDemo from './components/EventDemo';
+import ListDemo from './components/ListDemo';
 
 function App() {
 
@@ -24,7 +26,9 @@ function App() {
 
         {/* <Counter/> */}
         {/* <Users/> */}
-        <FormComponent/>
+        {/* <FormComponent/> */}
+        {/* <EventDemo/> */}
+        <ListDemo/>
 
     </div>
   );
