@@ -11,6 +11,10 @@ import FormComponent from './components/FormComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EventDemo from './components/EventDemo';
 import ListDemo from './components/ListDemo';
+import RefDemo from './components/RefDemo';
+import Dashboard from './components/Dashboard';
+import { Routes,Route } from 'react-router-dom';
+import NotFound from './components/NotFound';
 
 function App() {
 
@@ -19,8 +23,32 @@ function App() {
   return (
     <div className="App">
        
-        {/* <Header/>        
+       <Header/>  
+        <div className='main-layout'>
+            <Sidebar/>
+
+            
+
+            {/* Content Area Start */}
+            <div className='content'>
+
+              <Routes>
+                <Route path="/" element={<Dashboard/>} /> 
+                <Route path="/refs" element={<RefDemo/>} /> 
+                <Route path="*" element={<NotFound/>}/>
+              </Routes>
+
+
+            </div>
+
+ 
+           {/* Content Area End */}
+
+      
+        </div>
         <Footer/>
+        {/*       
+       
         <Content/>
         <Sidebar/> */}
 
@@ -28,8 +56,9 @@ function App() {
         {/* <Users/> */}
         {/* <FormComponent/> */}
         {/* <EventDemo/> */}
-        <ListDemo/>
-
+        {/* <ListDemo/> */}
+        {/* <RefDemo/> */}
+          
     </div>
   );
 }
