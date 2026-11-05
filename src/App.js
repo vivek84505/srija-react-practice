@@ -15,6 +15,9 @@ import RefDemo from './components/RefDemo';
 import Dashboard from './components/Dashboard';
 import { Routes,Route } from 'react-router-dom';
 import NotFound from './components/NotFound';
+import UserList from './components/UserList';
+import UserDetails from './components/UserDetails';
+import FragementDemo from './components/FragementDemo';
 
 function App() {
 
@@ -26,15 +29,16 @@ function App() {
        <Header/>  
         <div className='main-layout'>
             <Sidebar/>
-
-            
-
+ 
             {/* Content Area Start */}
             <div className='content'>
 
               <Routes>
                 <Route path="/" element={<Dashboard/>} /> 
                 <Route path="/refs" element={<RefDemo/>} /> 
+                <Route path="/users" element={<UserList/>}/>
+                <Route path="/students/:id" element={<UserDetails/>}/>
+                <Route path="/fragement" element={<FragementDemo/> }/>
                 <Route path="*" element={<NotFound/>}/>
               </Routes>
 

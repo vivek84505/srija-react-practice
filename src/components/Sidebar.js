@@ -18,6 +18,18 @@ function Sidebar(){
                         Ref Demo
                     </NavLink>
                 </li>
+
+                     <li>
+                    <NavLink to="/users">
+                      User List
+                    </NavLink>
+                </li>
+
+                  <li>
+                    <NavLink to="/fragement">
+                      fragementd Demo
+                    </NavLink>
+                </li>
             </ul>
 
         </aside>
