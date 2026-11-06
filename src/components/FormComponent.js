@@ -77,7 +77,10 @@ function FormComponent() {
         if (validateForm()) {
 
             console.log("Form submitted successfully:", formData);
+           
             setIsSubmitted(true);
+
+
         } else {
             setIsSubmitted(false);
         }
